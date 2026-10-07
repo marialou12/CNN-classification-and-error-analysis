@@ -24,7 +24,7 @@ The initial network structure consists of:
 - **Convolutional Layer:** 32 filters, 3x3 kernel, ReLU activation.
 - **Pooling Layer:** Max Pooling 2x2.
 - **Regularization:** Dropout (0.3).
-- **Flatenning & Dense Layers:** Flatten followed by a 64-unit ReLU layer.
+- **Flattening & Dense Layers:** Flatten followed by a 64-unit ReLU layer.
 - **Output Layer:** 10 units with Softmax activation.
 
 ## Key Insights & Ethical Considerations
