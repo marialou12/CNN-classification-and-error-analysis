@@ -31,3 +31,12 @@ The initial network structure consists of:
 
 * **Visual Confusions:** The project explores why certain pairs of numbers are naturally harder for computer vision models to distinguish due to overlapping geometric feature maps.
 * **Ethical Risks:** Discussion on how regional handwriting styles, age gaps, and cultural variations under-represented in the MNIST dataset can lead to biased accuracy rates and real-world costs in critical automation systems (e.g., mail sorting or check processing).
+  
+* ##  Project Reflection
+
+* **What Worked Well:** The `EarlyStopping` callback functioned perfectly, halting training exactly when validation loss plateaued and saving computational time. The stratified split also kept our evaluation fair and balanced.
+* **What Was Difficult:** Dissecting the confusion matrix highlighted how fragile standard feature maps can be when processing highly distorted human handwriting. Predicting how a deeper architecture would redistribute specific errors required close index scanning.
+* **What Could Be Improved:** 
+  * **Data Augmentation:** Introducing artificial rotations, minor scaling, and shifts during preprocessing would expose the model to wider handwriting variations.
+  * **Error Profiling:** Rather than just counting errors, explicitly plotting the exact images where the model was highly confident yet wrong would provide better debugging insights before production.
+
